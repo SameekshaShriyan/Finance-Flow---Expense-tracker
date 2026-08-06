@@ -12,7 +12,7 @@ export default function Dashboard() {
   const { user } = useAuth();
   const [stats, setStats] = useState({ totalExpense:0, totalIncome:0, categoryData:[], monthlyData:[], recentExpenses:[] });
   const [alerts, setAlerts] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [, setLoading] = useState(false);
 
   useEffect(() => { fetchData(); }, []);
 
